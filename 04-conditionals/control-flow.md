@@ -4,6 +4,21 @@ In programming we usually want to control in which direction the program takes o
 
 In python we have some different ways to do conditionals. The main way is "if-statments".
 
+## Indentation: grouping instructions
+
+Python uses spaces at the start of a line, called **indentation**, to show which instructions belong together. After an `if` condition, write a colon (`:`), then indent the instructions that should run when the condition is true. By convention, use four spaces for each level of indentation.
+
+```python
+is_sunny = True
+
+if is_sunny:
+    print("Wear sunglasses")
+
+print("This line runs after the if block")
+```
+
+The indented `print()` belongs to the `if` block, so it runs only when `is_sunny` is true. The last `print()` is not indented, so it is outside the block and runs either way. Keep the indentation consistent; Python uses it to understand the program.
+
 Say we take input from the user about how old they are and we only want people over the age of 15 use our application. We could check this like this:
 
 ```python
