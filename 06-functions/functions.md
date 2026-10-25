@@ -52,6 +52,13 @@ We set the return type for multiple reasons:
 - Some languages require us to set it otherwise it will not be valid syntax (Python does NOT require it but it's best practice to set it anyways to make your code more readable)
 - For type validation, So when you try to pass the value from a function to another function, It will detect beforehand if the value you are sending is the expected one and not something else.
 
+A function can also return nothing:
+
+```python
+def send_hello_message() -> None:
+    print("Hello!")
+```
+
 ### Function name
 
 The function name is the **identifier** of the function. This is what we use to call the function elsewhere in our code.
@@ -97,6 +104,14 @@ result2 = sum(100,100) # returns 200
 ```
 
 We also want to define which the data type is for the parameters, This is as well NOT mandatory in python but is best practice to do so, This makes it easier for both the function to handle the parameters it is given but also for the user of the function to know what the function expects.
+
+A function can also take no parameters:
+
+```python
+def get_current_temperature() -> float:
+    temp = 13.5f
+    return temp
+```
 
 
 ### Lastly
